@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentil Cherednichenko NT LANIT</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <p>Привет! Данный скрипт позволяет сгенерировать любое количество рандомных числовых данных от нуля до заданного
+    значения и потом вычислить заданный перцентиль из сгенерированных данных. Как это рабоатет? Функция <span
+      class="fn">generateRandomNumericData</span> генерирует массив с таким количесвом случайных чисел, которое указано
+    в первом инпуте. Случайные числа могут быть от нуля, до той цифры, которая указана во втором инпуте. Затем, функцией
+    <span class="fn">getPercentileFromNumbers</span> этот массив сортируется по убыванию и на основании перцентиля у
+    него "срезается" верхушка. Возвращается первое(наибольшее) число в массиве.
+  </p>
+  <div class="box">
+    <label>
+      Количество значений
+      <input id="numberOfEntries" type="text" value="10000">
+    </label>
+    <label>
+      Максимально допустимое значение
+      <input id="maxValue" type="text" value="1000">
+    </label>
+    <label>
+      Перцентиль
+      <input id="percentile" type="text" value="90">
+    </label>
+
+    <button id="btn">Рассчитать</button>
+
+    <div id="output"></div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

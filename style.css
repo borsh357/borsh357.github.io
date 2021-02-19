@@ -1,0 +1,40 @@
+body {
+  background: #3f3f3f;
+  color: white;
+  font-family: Oxygen, sans-serif;
+}
+
+input {
+  padding: 5px;
+  background: #8d8d8d;
+  color: #ebebeb;
+  outline: none;
+}
+
+button {
+  background: #8d8d8d;
+  color: #ebebeb;
+  outline: none;
+}
+
+label {
+  display: grid;
+}
+
+.box {
+  display: flex;
+  gap: 20px;
+}
+
+#output {
+  display: flex;
+  align-items: center;
+}
+
+.fn {
+  color: #6bcc62;
+}
+
+p {
+  font-size: 1.2rem;
+}
