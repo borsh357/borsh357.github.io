@@ -3,7 +3,7 @@
 function generateRandomNumericData(numberOfEntries, max) {
   const arrayOfEntries = [];
   for (let i = 0; i < numberOfEntries; i++) {
-    arrayOfEntries.push(Math.floor(Math.random() * Math.floor(max + 1)));
+    arrayOfEntries.push(Math.floor(Math.random() * Math.floor(max)));
   }
   return arrayOfEntries;
 }
